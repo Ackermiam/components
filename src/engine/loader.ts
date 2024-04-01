@@ -12,9 +12,9 @@ interface MountElement extends Element {
 
 export const mountApp = () => {
   document.querySelectorAll('[data-page]').forEach((element: MountElement) => {
-    const dataSelector: string = element.dataset?.configId ?? '';
+    const dataSelector: string = element.dataset?.id ?? '';
 
-    if (element.dataset?.mount === undefined) {
+    if (element.dataset?.page === undefined) {
       throw new Error('dataset mount is empty');
     }
 
