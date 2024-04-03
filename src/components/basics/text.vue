@@ -1,5 +1,11 @@
 <template>
-  <component :is="`p`">
-    coucou
+  <component :is="config.type">
+    {{ config.text }}
   </component>
 </template>
+
+<script setup lang="ts">
+defineProps<{
+  config: any
+}>()
+</script>
