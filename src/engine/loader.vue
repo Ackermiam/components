@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="Loader">
     <component
       v-for="(component, index) in config"
       :key="index"
@@ -18,4 +18,10 @@ defineProps<{
 </script>
 
 <style scoped>
+.Loader {
+  width: 100%;
+  max-width: 1440px;
+  background: beige;
+  margin: 0 auto;
+}
 </style>
