@@ -14,6 +14,5 @@ defineProps<{
 <style scoped>
 .Text {
   font-size: 16px;
-  margin-bottom: 10px;
 }
 </style>
